@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SI Cinematic | Business Website</title>
+  <style>
+    body { margin:0;font-family:'Poppins',sans-serif;background:#0b0b0b;color:#fff; }
+    header{height:100vh;background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url('https://images.unsplash.com/photo-1511765224389-37f0e77cf0eb');background-size:cover;background-position:center;display:flex;align-items:center;justify-content:center;text-align:center;}
+    .neon{font-size:4rem;letter-spacing:4px;color:#00ffe0;text-shadow:0 0 10px #00ffe0,0 0 30px #00ffe0,0 0 60px #00ffe0;animation:glow 2s infinite alternate;}
+    @keyframes glow{from{text-shadow:0 0 10px #00ffe0;}to{text-shadow:0 0 40px #00ffe0,0 0 80px #00ffe0;}}
+    header p{font-size:1.2rem;opacity:.9;}
+    .social a{margin:10px;padding:12px 25px;border:2px solid #00ffe0;color:#00ffe0;text-decoration:none;border-radius:30px;transition:.3s;}
+    .social a:hover{background:#00ffe0;color:#000;}
+    section{padding:60px 20px;max-width:1100px;margin:auto;}
+    h2{text-align:center;margin-bottom:40px;font-size:2.5rem;color:#00ffe0;}
+    .about{text-align:center;line-height:1.8;font-size:1.1rem;}
+    .services{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;}
+    .card{background:#141414;padding:30px;border-radius:15px;box-shadow:0 0 15px rgba(0,255,224,0.2);transition:.3s;}
+    .card:hover{transform:translateY(-10px);box-shadow:0 0 30px rgba(0,255,224,0.5);}
+    .upload-box{background:#111;padding:30px;border-radius:15px;text-align:center;border:2px dashed #00ffe0;}
+    footer{background:#000;padding:20px;text-align:center;font-size:.9rem;opacity:.8;}
+  </style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1 class="neon">SI CINEMATIC</h1>
+    <p>Photography • Cinematic Videography • Creative Editing</p>
+    <div class="social">
+      <a href="https://wa.me/919373778962" target="_blank">WhatsApp</a>
+      <a href="https://instagram.com/its_djsoham1101" target="_blank">Instagram</a>
+    </div>
+  </div>
+</header>
+
+<section>
+  <h2>About Me</h2>
+  <p class="about">
+    Main SI Cinematic ka founder hoon. Main professional photography aur cinematic videography karta hoon.
+    Wedding shoots, reels, cinematic videos aur professional photo editing meri speciality hai.
+    Aap apni photos yahan upload kar sakte ho aur main unko cinematic look ke saath edit karke deliver karunga.
+  </p>
+</section>
+
+<section>
+  <h2>My Services</h2>
+  <div class="services">
+    <div class="card">Wedding Photography</div>
+    <div class="card">Cinematic Videography</div>
+    <div class="card">Reels & Short Films</div>
+    <div class="card">Professional Photo Editing</div>
+  </div>
+</section>
+
+<section>
+  <h2>Upload Your Photos</h2>
+  <div class="upload-box">
+    <p>Apni photo yahan upload karein (editing ke liye)</p>
+    <input type="file" multiple />
+    <p style="margin-top:15px; font-size:0.9rem; opacity:0.7;">(Backend connect karne par photos directly aapke pass aa jayengi)</p>
+  </div>
+</section>
+
+<footer>
+  <p>📧 Email: inglesoham523@gmail.com</p>
+  <p>📞 Contact / WhatsApp: 9373778962</p>
+  <p>© 2025 SI Cinematic | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
