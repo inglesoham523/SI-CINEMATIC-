@@ -56,12 +56,39 @@
 
 <section>
   <h2>Upload Your Photos</h2>
-  <div class="upload-box">
+
+  <form
+    name="photo-upload"
+    method="POST"
+    data-netlify="true"
+    enctype="multipart/form-data"
+    class="upload-box"
+  >
+    <input type="hidden" name="form-name" value="photo-upload" />
+
     <p>Apni photo yahan upload karein (editing ke liye)</p>
-    <input type="file" multiple />
-    <p style="margin-top:15px; font-size:0.9rem; opacity:0.7;">(Backend connect karne par photos directly aapke pass aa jayengi)</p>
-  </div>
+
+    <label>
+      Your Name:
+      <input type="text" name="name" required />
+    </label><br><br>
+
+    <label>
+      Your Email:
+      <input type="email" name="email" required />
+    </label><br><br>
+
+    <label>
+      Upload Photos:
+      <input type="file" name="photos" multiple required />
+    </label><br><br>
+
+    <button type="submit">Upload & Send</button>
+  </form>
 </section>
+
+  
+
 
 <footer>
   <p>📧 Email: inglesoham523@gmail.com</p>
